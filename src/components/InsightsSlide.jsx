@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Lightbulb, Target, TrendingUp, AlertTriangle, CheckCircle, Eye } from 'lucide-react';
+import DataAttribution from './DataAttribution';
 
 const InsightsSlide = ({ dataProcessor }) => {
   const insights = dataProcessor?.getKeyInsights() || {};
@@ -338,13 +339,9 @@ const InsightsSlide = ({ dataProcessor }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 2.0 }}
-          className="mt-16 text-center text-slate-500 text-sm"
+          className="mt-16"
         >
-          <p>
-            Analysis based on {insights.totalSystems || 747} AI supercomputers worldwide • 
-            Data compiled from public sources and industry reports • 
-            Last updated: {new Date().toLocaleDateString()}
-          </p>
+          <DataAttribution />
         </motion.div>
       </div>
     </div>

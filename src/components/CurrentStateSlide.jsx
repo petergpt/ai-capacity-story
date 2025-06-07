@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { Activity, Zap, Building, MapPin } from 'lucide-react';
+import DataAttribution from './DataAttribution';
 
 const CurrentStateSlide = ({ dataProcessor }) => {
   const insights = dataProcessor?.getKeyInsights() || {};
@@ -219,12 +220,13 @@ const CurrentStateSlide = ({ dataProcessor }) => {
             <h3 className="text-2xl font-bold gradient-text mb-4">
               The Infrastructure Reality Gap
             </h3>
-            <p className="text-lg text-slate-300 leading-relaxed">
+            <p className="text-lg text-slate-300 leading-relaxed mb-4">
               Today's AI computing reality is just <span className="text-ai-emerald font-semibold">1.6 million H100 equivalents</span>. 
               But the planned infrastructure represents a <span className="text-ai-orange font-semibold">50x multiplication</span> of 
               this capacity. We're not seeing incremental growth—we're witnessing the early stages of a 
               computational revolution that will reshape global technology infrastructure.
             </p>
+            <DataAttribution variant="compact" className="text-center mt-4" />
           </div>
         </motion.div>
       </div>

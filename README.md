@@ -62,13 +62,37 @@ npm run build
 - **Recharts** - Interactive charts and data visualization
 - **Lucide React** - Beautiful icons
 
-## Data Sources
+## Data Sources & Attribution
 
-Analysis based on comprehensive research of AI supercomputers worldwide, including:
-- Public company announcements
-- Government infrastructure reports  
-- Industry analysis and projections
-- Academic research publications
+### Primary Dataset
+**Pilz, K., Rahman, R., Sanders, J., Heim, L.** (2024). *Trends in AI Supercomputers*. Epoch AI. Retrieved from https://epoch.ai/data/ai-supercomputers [Accessed: June 7, 2025]
+
+**Academic Citation:**
+```
+Konstantin Pilz, Robi Rahman, James Sanders, Lennart Heim, 'Trends in AI Supercomputers'. 
+Published online at epoch.ai. Retrieved from 'https://epoch.ai/data/ai-supercomputers' [online resource]. 
+Accessed 7 Jun 2025.
+```
+
+### Dataset Coverage
+- **747 AI supercomputers** globally analyzed
+- **34 countries** represented  
+- **581 existing systems**, 161+ planned
+- Performance metrics (H100 equivalents, FLOP/s)
+- Power consumption and hardware costs
+- Geographic coordinates and ownership data
+
+### Additional Sources
+- Company earnings reports and press releases
+- Government infrastructure announcements  
+- Industry analysis from SemiAnalysis, MLPerf, Top500
+- Academic research publications on AI infrastructure
+
+### Research Team (Epoch AI)
+- **Konstantin Pilz** - Lead Researcher
+- **Robi Rahman** - Data Analysis  
+- **James Sanders** - Infrastructure Analysis
+- **Lennart Heim** - AI Systems Research
 
 ## Deployment
 

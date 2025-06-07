@@ -13,6 +13,7 @@ import GeographicSlide from './components/GeographicSlide';
 import FutureSlide from './components/FutureSlide';
 import InsightsSlide from './components/InsightsSlide';
 import ProgressIndicator from './components/ProgressIndicator';
+import Footer from './components/Footer';
 
 // Import data processor
 import AICapacityDataProcessor from './utils/dataProcessor';
@@ -200,6 +201,9 @@ function App() {
       <div className="fixed top-4 right-4 text-xs text-slate-400 bg-slate-900/50 rounded px-3 py-2 backdrop-blur-sm">
         Use ← → arrows or space to navigate
       </div>
+
+      {/* Data Attribution Footer */}
+      <Footer />
     </div>
   );
 }

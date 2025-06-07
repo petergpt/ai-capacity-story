@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ComposedChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { Zap, TrendingUp, AlertTriangle, Target } from 'lucide-react';
+import DataAttribution from './DataAttribution';
 
 const InflectionSlide = ({ dataProcessor }) => {
   const insights = dataProcessor?.getKeyInsights() || {};
@@ -362,12 +363,13 @@ const InflectionSlide = ({ dataProcessor }) => {
             <h3 className="text-2xl font-bold gradient-text mb-4">
               The Point of No Return
             </h3>
-            <p className="text-lg text-slate-300 leading-relaxed">
+            <p className="text-lg text-slate-300 leading-relaxed mb-4">
               2026 represents more than just aggressive growth—it's a <span className="text-ai-orange font-semibold">phase transition</span> in 
               computing capability. After this inflection point, AI infrastructure will fundamentally reshape how we think about 
               computation, energy, and technological possibility. The systems coming online in 2026 will have more computing power 
               than <span className="text-ai-blue font-semibold">all of human civilization</span> had access to just five years ago.
             </p>
+            <DataAttribution variant="compact" className="text-center mt-4" />
           </div>
         </motion.div>
       </div>

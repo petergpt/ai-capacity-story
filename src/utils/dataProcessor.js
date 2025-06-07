@@ -1,4 +1,12 @@
 // Data processing utilities for AI capacity analysis
+// 
+// Data Source: Pilz, K., Rahman, R., Sanders, J., Heim, L. (2024). 
+// 'Trends in AI Supercomputers'. Epoch AI. 
+// Retrieved from https://epoch.ai/data/ai-supercomputers
+// Accessed: June 7, 2025
+//
+// This module processes and analyzes the Epoch AI dataset of 747 AI supercomputers
+// to generate insights about global AI computing infrastructure trends.
 
 export class AICapacityDataProcessor {
   constructor(csvData) {

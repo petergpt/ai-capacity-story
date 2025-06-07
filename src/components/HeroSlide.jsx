@@ -111,15 +111,21 @@ const HeroSlide = ({ dataProcessor, onNext }) => {
           </button>
         </motion.div>
 
-        {/* Subtitle */}
-        <motion.p
+        {/* Data Attribution */}
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.2 }}
-          className="mt-8 text-slate-500 text-sm"
+          className="mt-8 text-center"
         >
-          Based on analysis of 747 AI supercomputers worldwide • Data updated {new Date().toLocaleDateString()}
-        </motion.p>
+          <p className="text-slate-500 text-sm mb-2">
+            Based on analysis of 747 AI supercomputers worldwide
+          </p>
+          <p className="text-slate-600 text-xs">
+            Data source: <a href="https://epoch.ai/data/ai-supercomputers" className="text-ai-blue hover:text-ai-blue/80 underline" target="_blank" rel="noopener noreferrer">Epoch AI - Trends in AI Supercomputers</a> • 
+            Pilz, K., Rahman, R., Sanders, J., Heim, L. (2024) • Accessed Jun 7, 2025
+          </p>
+        </motion.div>
       </div>
     </div>
   );
