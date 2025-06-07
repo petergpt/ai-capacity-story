@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-slate-700;
+  }
+  
+  body {
+    @apply bg-slate-950 text-white font-display antialiased;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+    min-height: 100vh;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-ai-blue via-ai-purple to-ai-rose bg-clip-text text-transparent;
+  }
+  
+  .glow-effect {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+  }
+  
+  .number-display {
+    @apply font-mono text-4xl md:text-6xl font-bold gradient-text;
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+  
+  .insight-card {
+    @apply bg-slate-900/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(51, 65, 85, 0.6) 100%);
+  }
+  
+  .chart-container {
+    @apply bg-slate-900/30 backdrop-blur-sm border border-slate-700/30 rounded-lg p-4;
+  }
+}
